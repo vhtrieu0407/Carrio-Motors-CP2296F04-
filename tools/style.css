@@ -43,13 +43,32 @@ nav {
 .nav ul li {
     margin-left: 50px;
     list-style: none;
-    display: inline-block;
+    display: flex;
 }
 .nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
 }
+.menu-region ul {
+    display: none;
+}
+.menu-region li:hover ul {
+    display: block;
+    position: absolute;
+}
+.menu-region li:hover ul {
+    display: block;
+    position: absolute;
+}
+.menu-region li:hover li {
+    float: none;
+}
+.menu-region ul {
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
 .row {
     display: flex;
     height: 88%;
@@ -144,7 +163,7 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 .nav li a:hover::after {
     width: 100%;
