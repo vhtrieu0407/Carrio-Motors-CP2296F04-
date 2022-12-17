@@ -47,15 +47,18 @@
                 <ul class="menu-region">
                     <li><a>LOGIN</a>
                         <ul id="hide-login">
+                            <li><a href="">Account</a></li>
                             <li><a href="">log in</a></li>
                             <li><a href="">Register</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            <img src="./img/menu.png" class="menu-icon">
-
-            <div class="menu-nav">
+            <img src="./img/menu.png" class="menu-icon" onclick="myFunction()">
+            <div style="color:aqua;">
+                <h4>visit +<span id="visitCount"></span></h4>
+            </div>
+            <div class="menu-nav" id="menu-nav">
                 <ul>
                     <li><a>Brand categorization & Performance</a>
                         <ul class="mm">
@@ -91,10 +94,14 @@
                     </li>           
                 </ul>
                 <ul>
-                    <li><a></a>
-                        <ul>
+                    <li class="nn"><a>About US</a>
+                        <ul class="mm">
                             <li><a href=""></a></li>
-                            <li><a href=""></a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Site Map</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">bought</a></li>
+                            <li><a href="">Vote</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -217,7 +224,43 @@
             loop: true
         });
 
-        
+        function myFunction() {
+        var x = document.getElementById("menu-nav");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+        } else {
+            x.style.display = "none";
+        }
+        }
+
+        const visitCount =
+        {
+            show: function()
+            {
+                var count = Number(localStorage.getItem('visitCount'));
+                if (count == null)
+                {
+                    count = 1;
+                    localStorage.setItem('visitCount', count);
+                }
+                else
+                {
+                    count += 1;
+                    localStorage.setItem('visitCount', count);
+                }
+                document.getElementById('visitCount').innerText = count;
+            },
+            setCount: function(count)
+            {
+                localStorage.setItem('visitCount', count);
+                document.getElementById('visitCount').innerText = count;
+            },
+            delete: function()
+            {
+                localStorage.removeItem('visitCount');
+            }
+        }
+        visitCount.show();
     </script>
 </body>
 </html>
