@@ -57,17 +57,40 @@ nav {
     display: block;
     position: absolute;
 }
-.menu-region li:hover ul {
-    display: block;
-    position: absolute;
-}
+
 .menu-region li:hover li {
-    float: none;
+    float: none;   
 }
 .menu-region ul {
     margin-top: 20px;
     margin-left: -50px;
 }
+
+.menu-nav {
+    position: absolute;
+    color: #fff;
+    margin-top: 18%;
+    margin-left: 40%;
+    display: flex;   
+}
+
+    
+
+.menu-nav ul li {
+    list-style: none;
+    
+}
+.menu-nav ul li a {
+    text-decoration: none;
+    
+}
+.menu-nav .mm li a {
+    color: #4b80d7;
+}
+.nn {
+    margin-left: 30px;
+}
+
 
 .row {
     display: flex;

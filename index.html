@@ -19,11 +19,11 @@
             <img src="./img/logo-1.png" class="logo">
             <nav class="nav">
                 <ul>
-                    <li><a href="">HOME</a></li>                    
+                    <li><a href="./index.html">HOME</a></li>                    
                 </ul>
                 <ul class="menu-region">
-                    <li><a href="">REGION</a>
-                        <ul>
+                    <li><a>REGION</a>
+                        <ul id="hide-region">
                             <li><a href="#">Vietnam</a></li>
                             <li><a href="#">America</a></li>
                             <li><a href="">South Korea</a></li>
@@ -35,14 +35,62 @@
                         </ul>
                     </li>
                 </ul>
-                <ul>
-                    <li><a href="">ABOUT</a></li>
+                <ul class="menu-region">
+                    <li><a>ABOUT</a>
+                        <ul id="hide-about">
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Map</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <ul>
-                    <li><a href="">LOGIN</a></li>
+                <ul class="menu-region">
+                    <li><a>LOGIN</a>
+                        <ul id="hide-login">
+                            <li><a href="">log in</a></li>
+                            <li><a href="">Register</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            <img src="./img/menu.png" alt="" class="menu-icon">
+            <img src="./img/menu.png" class="menu-icon">
+
+            <div class="menu-nav">
+                <ul>
+                    <li><a>Brand categorization & Performance</a>
+                        <ul class="mm">
+                            <li><a href="">BMW</a></li>
+                            <li><a href="">Audi</a></li>
+                            <li><a href="">Hyundai</a></li>
+                            <li><a href="">JEEP</a></li>
+                            <li><a href="">Suzuki</a></li>
+                            <li><a href="">Kia</a></li>
+                            <li><a href="">Morris Garage</a></li>
+                            <li><a href="">more</a></li>
+                            <li><a href="">lamborghini</a></li>
+                            <li><a href="">Pherari</a></li>
+                            <li><a href="">MayBach</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>    
+                    <li class="nn"><a>Gallery</a>
+                        <ul class="mm">
+                            <li><a href="">BMW</a></li>
+                            <li><a href="">Audi</a></li>
+                            <li><a href="">Hyundai</a></li>
+                            <li><a href="">JEEP</a></li>
+                            <li><a href="">Suzuki</a></li>
+                            <li><a href="">Kia</a></li>
+                            <li><a href="">Morris Garage</a></li>
+                            <li><a href="">more</a></li>
+                            <li><a href="">lamborghini</a></li>
+                            <li><a href="">Pherari</a></li>
+                            <li><a href="">MayBach</a></li>
+                        </ul>
+                    </li>           
+                </ul>
+            </div>
         </div>
         <div class="row">
             <div class="col col-1">
@@ -123,6 +171,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
+        // nhảy ảnh background
         var slideImg = document.getElementById("slideImg");
         var images = new Array(
             "img/background-1.png",
