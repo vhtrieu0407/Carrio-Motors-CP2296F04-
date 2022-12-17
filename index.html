@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrio Motors</title>
+    <link rel="stylesheet" href="tools/style.css">   
+        
+</head>
+<body onload="slider()">
+    <div class="container">
+        <div>
+            <img id="slideImg">
+        </div>
+        <!-- <video autoplay loop class="back-video" muted plays-inline>
+            <source src="./img/background.mp4" type="video/mp4">
+        </video> -->
+
+        <div class="navbar">
+            <img src="./img/logo-1.png" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li><a href="">HOME</a></li>                    
+                </ul>
+                <ul>
+                    <li><a href="">REGION</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">LOGIN</a></li>
+                </ul>
+            </nav>
+            <img src="./img/menu.png" alt="" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col col-1">
+                <h1>Carrio Motors <br> <span id="type"></span></h1>
+                <p>Carrio Motors Motor Company is the premier builder and independent dealer of unforgettable vehicles 
+                    with a goal to provide our clients with innovative products and the expertise needed to actualize their unique dreams.</p>
+                <button>ExpLore</button>
+                
+            </div>
+            <div class="col col-2">
+                <div class="card card1">
+                    <h5>lamborghini</h5>
+                
+                </div>
+                <div class="card card2">
+                    <h5>Suzuki</h5>
+                    
+                </div>
+                <div class="card card3">
+                    <h5>Pherari</h5>
+                    
+                </div>
+                <div class="card card4">
+                    <h5>MayBach</h5>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="wrapper__">
+            <div class="circle circle-1">
+
+            </div>
+            <div class="circle circle-2">
+    
+            </div>
+            <div class="circle circle-3">
+    
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row-f">
+            <div class="col-f">
+                <img src="./img/logo-1.png" class="logo-f">
+                <p>Carrio Motors Motor Company is the premier builder and independent dealer of unforgettable vehicles with a goal to provide our clients with innovative products and the expertise needed to actualize their unique dreams.</p>
+            </div>
+            <div class="col-f">
+                <h3>Offline</h3>
+                <p>address: số 1, Lý Tự Trọng, Ninh Kiều, Cần Thơ</p>
+                <p class="email-id">Email: CarrioMotors@gmail.com</p>
+                <p>Tel: (+84) - 999 666 888</p>
+            </div>
+            <div class="col-f">
+                <h3>links</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Tik Tok</a></li>
+                    <li><a href="">yahoo</a></li>
+                    <li><a href="">Github</a></li>
+                </ul>
+            </div>
+            <div class="col-f">
+                <h3>newsletter</h3>
+                <form>
+
+                    <input type="email" placeholder="enter your email id" required>
+                    <button type="submit"><h4>sent</h4></button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="coppyright">Copyright belongs to Carrio Motors in 2022 - copying in any form is prohibited</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+            "img/background-1.png",
+            "img/bacground-2.webp",
+            "img/background-3.jpeg",
+            "img/background-4.jpg",
+            "img/background-index.jpg"
+        );
+        var len = images.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len-1) {
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 6000);
+        }
+
+
+            // text type
+        var typed=new Typed("#type", {
+            strings: ["lamborghini", "Suzuki", "Pherari", "MayBach"],
+            typeSpeed: 210,
+            backSpeed: 210,
+            loop: true
+        });
+
+        
+    </script>
+</body>
+</html>
