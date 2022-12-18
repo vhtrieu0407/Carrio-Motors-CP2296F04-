@@ -70,8 +70,10 @@ nav {
 .menu-nav {
     position: absolute;
     color: #fff;
-    margin-top: 18%;
-    margin-left: 40%;
+    /* margin-top: 18%;
+    margin-left: 40%; */
+    margin-top: 12%;
+    margin-left: 50%;
     display: flex;
     background: linear-gradient(to right, #00093c, #2d0b00); 
 }
@@ -388,3 +390,69 @@ hr{
 }
 
 
+/*mobie repostive application web*/
+/*mobie : width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .col-2 {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .menu-icon {
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+    .menu-nav {
+        width: 95%;
+        margin-left: -5%;
+        margin-top: 50%;   
+    }
+    .col-1 {
+        margin: 0px;
+        
+    }
+    .col-1 h1 {
+        width: 340px;
+    }
+    .logo {
+        margin-top: 15%;
+    }
+}
+
+/*table : width >= 740px and width < 1024px*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .col-2 {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .menu-icon {
+        margin-left: 60%;
+        margin-top: 10%;
+    }
+    .menu-nav {
+        width: 100%;
+        
+        margin: auto;
+        padding-top: 25%;
+    }
+    .coppyright {  
+        margin-left: -7%;
+    }
+    .container {
+        
+        height: 70vh;
+    }
+    .col-1 {
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+    .col-1 h1 {
+        width: 340px;
+    }
+    .logo {
+        margin-top: 15%;
+    }
+}
