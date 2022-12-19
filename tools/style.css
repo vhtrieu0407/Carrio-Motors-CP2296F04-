@@ -241,7 +241,7 @@ nav {
 
 /*loadding hieu ung */
 
-.wrapper {
+/* .wrapper {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -302,9 +302,93 @@ nav {
     100%{
         transform: rotate(360deg);
     }
+} */
+/*khuc giua cua trang web Brand categorization */
+.Brand__categorization {
+    width: 100%;
+    height: 102vh;
+    background-image: url('../img/background-body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Brand-categorization-1 h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: aquamarine;
+}
+.Brand__categorization .menu__Brand-categorization {
+    margin: 10px;
+    height: 93%;
+    border: 2px solid  black;
+    display: flex;
+}
+.menu__Brand-categorization .table--Brand-categorization {
+    width: 380px;
+    height: 600px;
+    border: 5px solid black;
+}
+.table--Brand-categorization img {
+    width: 360px;
+    height: 280px;
+    padding: 10px 10px 4px 10px;
+}
+.noi-dung {
+    padding: 0px 10px;
+}
+.noi-dung h3 {
+    color: #ff3d00;
+}
+.noi-dung h3 span {
+    color: #4b80d7;
+}
+
+.menu-Performance {
+    width: 220px;
+    margin-left: 5px;
+    height: 250px;
+}
+.img-Performance img { /**/
+    width: 210px;
+    padding: 5px;
+    height: 160px;
+}
+.noi-dung-img h3 {
+    color: aqua;
+}
+.noi-dung-img h3 span {
+    color: #fff;
 }
 
 
+/*che do bao hanh warranty schemes */
+
+.warranty__schemes {
+    width: 100%;
+    height: 103vh;
+    background-image: url('../img/background-body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.warranty-schemes h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: aquamarine;
+}
+.menu__warranty-schemes {
+    height: 90%;
+    margin: 0px 10px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid  black;
+    display: flex;
+}
+.table-warranty-schemes img {
+    width: 400px;
+    height: 200px;
+}
+.noi-dung-warranty-schemes h3 {
+    color: #4b80d7;
+}
 /*footer bottom */
 
 footer {
