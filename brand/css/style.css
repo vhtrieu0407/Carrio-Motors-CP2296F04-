@@ -232,10 +232,6 @@ header .icons #menu-bars {
     line-height: 1.5;
 }
 
-.swiper-pagination-bullet-active {
-    background: var(--green);
-}
-
 .dishes .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -699,14 +695,19 @@ header .icons #menu-bars {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-color: #DD0004;
     box-shadow: 0 0 10px black;
     color: white;
     outline: none;
     cursor: pointer;
+}
+
+#btnScrollToTop img {
+    max-width: 20px;
+    height: auto;
 }
 
 #btnScrollToTop:active {
