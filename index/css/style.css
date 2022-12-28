@@ -78,6 +78,7 @@ header {
     justify-content: space-between;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+    flex-direction: row;
 }
 
 header .header-logo {
@@ -107,6 +108,12 @@ header .navbar a {
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color: var(--light-color);
+}
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .navbar a.active,
