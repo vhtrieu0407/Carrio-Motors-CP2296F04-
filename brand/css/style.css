@@ -146,18 +146,22 @@ header .header-logo h1 {
 }
 
 .menu .container .inercontainer {
-    width: 400px;
+    width: 410px;
     height: 300px;
+    border-color: white;
+    fill: white;
 }
 
-.menu .container .inercontainer .image img {
-    max-width: 400px;
+.menu .container .inercontainer img {
+    max-width: 350px;
     height: auto;
 }
 
-.menu .container .inercontainer .image p {
+.menu .container .inercontainer p {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    color: var(--black);
+    margin-top: 5px;
 }
 
 /*btn scrollToTop*/
