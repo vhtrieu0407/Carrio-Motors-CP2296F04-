@@ -129,6 +129,7 @@ header .header-logo h1 {
 .menu {
     padding-top: 10em;
     padding-bottom: 20px;
+    background-color: rgb(298, 298, 298);
 }
 
 .menu .model-x {
@@ -139,22 +140,41 @@ header .header-logo h1 {
 }
 
 .menu .container {
-    color: rgb(298, 298, 298);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin: -10px;
+}
+
+.menu .container>* {
+    flex: 300px;
+    margin: 10px;
 }
 
 .menu .container .inercontainer {
+    display: flex;
     width: 410px;
     height: 300px;
-    border-color: white;
-    fill: white;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
 }
 
 .menu .container .inercontainer img {
     max-width: 350px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu .container .inercontainer p {
