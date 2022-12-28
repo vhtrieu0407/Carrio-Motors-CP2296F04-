@@ -58,10 +58,12 @@ header {
     background: #fff;
     padding: 1rem 7%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 1000;
     box-shadow: var(--box-shadow);
+    position: relative;
 }
 
 header .header-logo {
@@ -70,6 +72,7 @@ header .header-logo {
     padding: 0%;
     justify-content: space-around;
     cursor: pointer;
+    align-items: center;
 }
 
 header .header-logo img {
@@ -83,7 +86,11 @@ header .header-logo h1 {
     font-size: 30px;
     font-weight: 700;
     color: gray;
-    align-self: center;
+}
+
+header .sublogo {
+    max-height: 70px;
+    width: auto;
 }
 
 .footer .box-container {
