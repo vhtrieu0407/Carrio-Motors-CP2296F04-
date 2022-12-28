@@ -207,15 +207,3 @@ header .header-logo h1 {
 #btnScrollToTop:active {
     background: #c41b2cec;
 }
-
-#description {
-    position: relative;
-    top: 10px;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.jeeplogo {
-    max-width: 200px;
-    height: 140px;
-}
