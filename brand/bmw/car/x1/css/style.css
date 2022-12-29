@@ -26,7 +26,7 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
+.footer {
     padding: 2rem 9%;
 }
 
@@ -88,8 +88,6 @@ header .header-logo .iner-header-logo h1 {
     font-weight: 700;
     color: gray;
 }
-
-header .sublogo {}
 
 header .ghost .header-logo {
     display: flex;
@@ -162,62 +160,71 @@ header .ghost {
 
 /*menu section*/
 
-.menu {
+.detail {
     padding-top: 10em;
     padding-bottom: 20px;
     background-color: rgb(298, 298, 298);
 }
 
-.menu .model-x {
-    text-align: center;
-    font-size: 60px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-
-.menu .container {
+.detail .main-pic {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    margin: -10px;
+    width: 1520px;
+    height: 627px;
+    background-image: url("/brand/bmw/car/x1/image/x1.jpg");
 }
 
-.menu .container>* {
-    flex: 300px;
-    margin: 10px;
+.detail .main-pic p {
+    color: white;
 }
 
-.menu .container .inercontainer {
-    display: flex;
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 2.5rem;
-    border-radius: 0.5rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.2);
-    box-shadow: var(--box-shadow);
-    position: relative;
-    overflow: hidden;
+.detail .main-pic .name {
+    padding: 5px;
+    margin-top: 124px;
+    margin-left: 61px;
+    font-size: 40px;
 }
 
-.menu .container .inercontainer img {
-    max-width: 350px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+.detail .main-pic .ghost-name {
+    margin-right: 61px;
+    font-size: 40px;
+    margin-top: 124px;
 }
 
-.menu .container .inercontainer p {
-    text-align: center;
-    font-size: 25px;
-    color: var(--black);
-    margin-top: 5px;
+.detail .main-pic .price-tag,
+.detail .main-pic .fuel-type {
+    font-size: 20px;
+}
+
+.detail .main-pic .price-tag #minor-1,
+.detail .main-pic .fuel-type #minor-2 {
+    font-size: 15px;
+}
+
+.detail .main-pic .name {
+    flex: 50%;
+    margin-left: 50px;
+}
+
+.detail .main-pic .ghost-name {
+    flex: 50%;
+    text-align: right;
+}
+
+.detail .main-pic .price-tag {
+    flex: 50%;
+    margin-left: 30px;
+    margin-top: 200px;
+}
+
+.detail .main-pic .fuel-type {
+    text-align: left;
+    margin-right: 700px;
+    bottom: 50px;
+}
+
+.detail {
+    padding-bottom: 2rem;
 }
 
 /*btn scrollToTop*/
